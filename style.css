@@ -120,4 +120,53 @@ h2 {
 
 /* Main stylings */
 
+main {
+  background-color: #eee;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 0em;
+}
+
+section,
+address {
+  background-color: #fff;
+
+  margin: 1em;
+  border: 1px solid #ddd;
+  font-style: normal;
+}
+
+.list-technologies {
+  list-style-type: none;
+  padding: 1em 0;
+}
+
+.list-technologies li {
+  display: inline-block;
+  background-color: #eee;
+  color: #444;
+  border: 1px solid #ddd;
+  padding: 0.2em 0.5em;
+  margin: 0 0.5em 0.5em 0;
+}
+
+article {
+  margin: 1em 0;
+}
+
+article .duration {
+  font-size: 1em;
+  color: #777;
+}
+
+article .content {
+  font-size: 1.5em;
+}
 /* Footer stylings */
+
+.footer-body {
+  background-color: #eee;
+}
