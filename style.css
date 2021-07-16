@@ -179,6 +179,25 @@ article .content {
   font-size: 1.5em;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+
+  margin-top: 2em;
+}
+
+.about-img {
+  width: 10em;
+  border-radius: 50%;
+  border: 0.5em solid rgba(220, 53, 69, 0.7);
+}
+
+.about-grid p {
+  margin: 0.5em 0;
+  font-size: 1.5em;
+}
+
 address .content {
   font-size: 1.5em;
   margin: 1em 0;
