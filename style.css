@@ -57,30 +57,30 @@ main {
   background-color: #000;
 }
 
-.ul-menu {
+.menu-nav {
   list-style-type: none;
   padding: 0;
 }
 
-.ul-menu li {
+.menu-nav li {
   padding: 0 1em;
   border-right: 1px solid #fff;
   display: inline-block;
 }
 
-.ul-menu li:last-child {
+.menu-nav li:last-child {
   border: 0;
 }
 
 @media screen and (max-width: 600px) {
-  .ul-menu li {
+  .menu-nav li {
     border: 0;
     display: block;
     padding-bottom: 0.5em;
   }
 }
 
-.ul-menu a {
+.menu-nav a {
   color: #fff;
   text-decoration: none;
 }
