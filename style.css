@@ -7,18 +7,33 @@
   margin: 0;
 }
 
+/* Root variables */
+:root {
+  --primary-color: #64858c;
+  --accent-color-raw: 255, 105, 51;
+  --accent-color: rgb(var(--accent-color-raw));
+  --accent-color--transparent1: rgba(var(--accent-color-raw), 0.7);
+  /*old: rgba(220, 53, 69, 0.7) */
+  --accent-color--transparent2: rgba(var(--accent-color-raw), 0.1);
+  --accent-color2: #734f4f;
+  --bgcolor-dark-raw: 13, 54, 64;
+  --bgcolor-dark: rgb(var(--bgcolor-dark-raw));
+  --bgcolor-dark--transparent: rgba(var(--bgcolor-dark-raw), 0.7);
+  --bgcolor-light: #f0f0f2;
+}
+
 /* Basic styles  */
 
 .padding-1em {
   padding: 1em;
 }
 
-.red {
-  color: #dc3545;
+.accent {
+  color: var(--accent-color);
 }
 
 a {
-  color: #dc3545;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -62,7 +77,7 @@ main {
 /* Navigation stylings */
 
 .header-body {
-  background-color: #000;
+  background-color: var(--bgcolor-dark);
 }
 
 nav {
@@ -82,11 +97,11 @@ nav {
 }
 
 .menu-nav a {
-  color: #fff;
+  color: var(--bgcolor-light);
 }
 
 .menu-nav a:hover {
-  color: #dc3545;
+  color: var(--accent-color);
 }
 
 @media screen and (max-width: 600px) {
@@ -124,14 +139,14 @@ nav {
 }
 
 #intro .content {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--bgcolor-dark--transparent);
 
   display: grid;
   justify-content: center;
   align-content: center;
   padding: 2em;
 
-  color: #fff;
+  color: var(--bgcolor-light);
 }
 
 h1 {
@@ -148,7 +163,7 @@ h2 {
 /* Main stylings */
 
 main {
-  background-color: #eee;
+  background-color: var(--bgcolor-light);
 }
 
 h3 {
@@ -159,7 +174,7 @@ h3 {
 
 section,
 address {
-  background-color: #fff;
+  background-color: var(--bgcolor-light);
 
   margin-bottom: 3em;
   padding: 3em;
@@ -174,10 +189,10 @@ address {
 
 .list-technologies li {
   display: inline-block;
-  background-color: rgba(220, 53, 69, 0.1);
-  color: #dc3545;
+  background-color: var(--accent-color--transparent2);
+  color: var(--accent-color);
 
-  border: 1px solid rgba(220, 53, 69, 0.1);
+  border: 1px solid var(--accent-color--transparent2);
   border-radius: 0.5em;
 
   padding: 0.3em 0.6em;
@@ -190,7 +205,7 @@ article {
 
 article .duration {
   font-size: 1em;
-  color: #dc3545;
+  color: var(--accent-color);
 }
 
 article .content {
@@ -208,7 +223,7 @@ article .content {
 .about-img {
   width: 10em;
   border-radius: 50%;
-  border: 0.5em solid rgba(220, 53, 69, 0.7);
+  border: 0.5em solid var(--accent-color--transparent1);
 }
 
 .about-grid p {
@@ -224,5 +239,5 @@ address .content {
 /* Footer stylings */
 
 .footer-body {
-  background-color: #eee;
+  background-color: var(--bgcolor-light);
 }
